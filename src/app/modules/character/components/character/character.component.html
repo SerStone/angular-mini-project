@@ -1,0 +1,15 @@
+<div class="characterCard">
+  <div class="characterImg">
+  <img class="imageChar" src="{{character.image}}" alt="image">
+  </div>
+  <div class="characterInfo">
+    <div> <div>{{character.id}}. {{character.name}}</div>
+      <div>Gender : {{character.gender}}</div>
+        <div>Location : {{character.location.name}}</div>
+          <div>Origin : {{character.origin.name}}</div>
+            <div>Status : {{character.status}}</div>
+              <div>Species : {{character.species}}</div>
+  </div>
+</div>
+       <button class="buttonDetails" role="button" (click)="getDetails()"><span class="text">getDetails</span><span>Sure?</span></button>
+</div>

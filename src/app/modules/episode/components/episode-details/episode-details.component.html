@@ -1,0 +1,14 @@
+<div class="episodeCardDetailed">
+  <div class="episodeInfoDetailed">
+  <small>{{episode.id}}</small>. {{episode.name}}
+  <br>
+  {{episode.episode}}<br>
+  {{episode.air_date}}<br>
+</div>
+  <a class="back" routerLink="/episodes">Back</a>
+<h2>Participants</h2>
+  <div class="episodeCharacterList">
+<app-episode-character *ngFor="let character of characters" [character]="character"></app-episode-character>
+  </div>
+</div>
+

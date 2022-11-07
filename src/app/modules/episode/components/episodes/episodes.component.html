@@ -1,0 +1,11 @@
+<div>
+  <h2 class="title">Episodes</h2>
+  <div class="episodeCardList">
+  <app-episode *ngFor="let episode of episodes" [episode]="episode"></app-episode>
+</div>
+  <mat-paginator
+    [length]="total_items"
+    [pageSize]="20"
+  >
+  </mat-paginator>
+</div>
